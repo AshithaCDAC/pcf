@@ -139,7 +139,7 @@ func (pcf *PCF) setLogLevel() {
 					factory.PcfConfig.Logger.PCF.DebugLevel)
 				logger.SetLogLevel(logrus.InfoLevel)
 			} else {
-				initLog.Infof("PCF Log level is set to [%s] level", level)
+				initLog.Infof("PCF Log level is set to [%s] level by ashitha....", level)
 				logger.SetLogLevel(level)
 			}
 		} else {
@@ -196,7 +196,7 @@ func (pcf *PCF) FilterCli(c *cli.Context) (args []string) {
 }
 
 func (pcf *PCF) Start() {
-	initLog.Infoln("Server started")
+	initLog.Infoln("Server started by ashitha...")
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
 
 	bdtpolicy.AddService(router)
